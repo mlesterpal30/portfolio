@@ -8,6 +8,7 @@ import { MdVerified } from "react-icons/md";
 const Hero = () => {
 	return (
 		<HStack className="font-geist" w="full" columnGap="5">
+			{/* Left */}
 			<Box flexShrink={0}>
 				<Image
 					src={myPicture}
@@ -18,17 +19,22 @@ const Hero = () => {
 					objectFit="cover"
 				/>
 			</Box>
-			<Box flex="1">
+
+			{/* Right */}
+			<Box flex="1" px="0.5">
+				{/* Name */}
 				<Text fontWeight="700" fontSize="26px">
 					Lester Maranan
 					<Icon as={MdVerified} boxSize="16px" color="blue.400" ml="1" />
 				</Text>
+				{/* Location */}
 				<HStack>
 					<Icon as={FiMapPin} boxSize="146x" mr="-1" />
 					<Text fontSize="16px" fontWeight="500">
 						Oriental Mindoro, Philippines
 					</Text>
 				</HStack>
+				{/* Role and Achievements */}
 				<Stack
 					direction={{
 						lg: "row",
@@ -61,6 +67,7 @@ const Hero = () => {
 						<Text>Bachelor of Science In Information Technology</Text>
 					</Flex>
 				</Stack>
+				{/* Links */}
 				<HStack>
 					<Flex
 						bg="black"
