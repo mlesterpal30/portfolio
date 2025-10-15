@@ -58,7 +58,7 @@ const Hero = () => {
 						align="center"
 					>
 						<Icon as={FaTrophy} boxSize="15px" color="white" />
-						<Text>Bachelor of Information Technology</Text>
+						<Text>Bachelor of Science In Information Technology</Text>
 					</Flex>
 				</Stack>
 				<HStack>
