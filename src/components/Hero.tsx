@@ -7,7 +7,7 @@ import { MdVerified } from "react-icons/md";
 
 const Hero = () => {
 	return (
-		<HStack className="font-geist" w="full" columnGap="5">
+		<HStack className="font-geist" w="full" columnGap="3">
 			{/* Left */}
 			<Box flexShrink={0}>
 				<Image
@@ -21,7 +21,7 @@ const Hero = () => {
 			</Box>
 
 			{/* Right */}
-			<Box flex="1" px="0.5">
+			<Box flex="1" px="2">
 				{/* Name */}
 				<Text fontWeight="700" fontSize="26px">
 					Lester Maranan
