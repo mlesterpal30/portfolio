@@ -1,9 +1,13 @@
-import { Text } from "@chakra-ui/react";
+import Hero from "./components/Hero";
+import { Box } from "@chakra-ui/react";
 const App = () => {
 	return (
-		<div>
-			<Text color="red.200">hello world</Text>
-		</div>
+		<Box
+			mx={{ base: "12px", sm: "30px", md: "70px", lg: "150px", xl: "256px" }}
+			my={{ base: 12, md: 14 }}
+		>
+			<Hero />
+		</Box>
 	);
 };
 
