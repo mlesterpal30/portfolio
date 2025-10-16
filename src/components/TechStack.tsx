@@ -29,7 +29,7 @@ const TechStack = () => {
 				<Text fontSize="15px" fontWeight="600">
 					Frontend
 				</Text>
-				<HStack fontSize="12px" spacing="2">
+				<HStack fontSize="12px" spacing="2" flexWrap="wrap">
 					{[
 						"React",
 						"Tailwind",
@@ -58,7 +58,7 @@ const TechStack = () => {
 				<Text fontSize="15px" fontWeight="600">
 					Backend
 				</Text>
-				<HStack fontSize="12px" spacing="2">
+				<HStack fontSize="12px" spacing="2" flexWrap="wrap">
 					{["REST", "Laravel", ".NET", "PHP", "MySQL", "MSSQL", "JWT"].map(
 						(tech) => (
 							<WrapItem key={tech}>
@@ -82,22 +82,20 @@ const TechStack = () => {
 				<Text fontSize="15px" fontWeight="600">
 					Developers Tools
 				</Text>
-				<HStack fontSize="12px" spacing="2">
+				<HStack fontSize="12px" spacing="2" flexWrap="wrap">
 					{["Git", "Github", "Azure DevOps", "Teams", "VsCode"].map(
 						(tech) => (
-							<WrapItem key={tech}>
-								<Box
-									key={tech}
-									rounded="md"
-									borderWidth="2px"
-									borderColor="gray.200"
-									px="2"
-									py="1"
-									bg="gray.50"
-								>
-									{tech}
-								</Box>
-							</WrapItem>
+							<Box
+								key={tech}
+								rounded="md"
+								borderWidth="2px"
+								borderColor="gray.200"
+								px="2"
+								py="1"
+								bg="gray.50"
+							>
+								{tech}
+							</Box>
 						)
 					)}
 				</HStack>

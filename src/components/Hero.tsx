@@ -7,13 +7,17 @@ import { MdVerified } from "react-icons/md";
 
 const Hero = () => {
 	return (
-		<HStack className="font-geist" w="full" columnGap="3">
+		<HStack
+			className="font-geist"
+			w="full"
+			columnGap={{ md: "3", base: "1" }}
+		>
 			{/* Left */}
 			<Box flexShrink={0}>
 				<Image
 					src={myPicture}
 					boxSize={{
-						base: "149px",
+						base: "144px",
 						md: "205px",
 					}}
 					rounded="6px"
@@ -75,13 +79,19 @@ const Hero = () => {
 					>
 						<Icon as={FaTrophy} boxSize="15px" color="white" />
 						<Text
-							fontSize={{
-								base: "11px",
-								md: "14px",
-							}}
+							fontSize={{ base: "11px", md: "14px" }}
 							flexWrap="wrap"
+							display={{ base: "none", md: "block" }}
 						>
-							Bachelor of Science In Information Technology
+							Bachelor of Science in Information Technology
+						</Text>
+
+						<Text
+							fontSize={{ base: "11px", md: "14px" }}
+							flexWrap="wrap"
+							display={{ base: "block", md: "none" }}
+						>
+							BS in Information Technology
 						</Text>
 					</Flex>
 				</Stack>
