@@ -1,5 +1,8 @@
+import About from "./components/About";
 import Hero from "./components/Hero";
-import { Box } from "@chakra-ui/react";
+import { Box, Stack } from "@chakra-ui/react";
+import TechStack from "./components/TechStack";
+import Experience from "./components/Experience";
 const App = () => {
 	return (
 		<Box
@@ -7,6 +10,15 @@ const App = () => {
 			my={{ base: 12, md: 14 }}
 		>
 			<Hero />
+			<Stack direction="row" mt="4">
+				<Stack flex="5">
+					<About />
+					<TechStack />
+				</Stack>
+				<Box flex="3">
+					<Experience />
+				</Box>
+			</Stack>
 		</Box>
 	);
 };
