@@ -7,7 +7,7 @@ import { MdVerified } from "react-icons/md";
 
 const Hero = () => {
 	return (
-		<HStack className="font-geist" w="full" columnGap="3" bg="blue.400">
+		<HStack className="font-geist" w="full" columnGap="3">
 			{/* Left */}
 			<Box flexShrink={0}>
 				<Image
@@ -22,7 +22,7 @@ const Hero = () => {
 			</Box>
 
 			{/* Right */}
-			<Box flex="1" px="2" bg="orange.200" flexWrap="wrap">
+			<Box flex="1" px="2" flexWrap="wrap">
 				{/* Name */}
 				<Text fontWeight="700" fontSize={{ md: "26px", base: "18px" }}>
 					Lester Maranan
@@ -97,7 +97,10 @@ const Hero = () => {
 					>
 						<Flex align="center" gap="2">
 							<Icon as={FiCalendar} />
-							<Text fontSize="12px" fontWeight="500">
+							<Text
+								fontSize={{ md: "12px", base: "9px" }}
+								fontWeight="500"
+							>
 								Schedule a call
 							</Text>
 							<ChevronRightIcon boxSize="14px" />
@@ -114,7 +117,10 @@ const Hero = () => {
 					>
 						<Flex align="center" gap="2">
 							<Icon as={FiMail} boxSize="14px" />
-							<Text fontSize="12px" fontWeight="500">
+							<Text
+								fontSize={{ md: "12px", base: "9px" }}
+								fontWeight="500"
+							>
 								Send email
 							</Text>
 						</Flex>
