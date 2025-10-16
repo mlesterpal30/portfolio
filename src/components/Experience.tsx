@@ -30,6 +30,7 @@ const Experience = () => {
 			padding="5"
 			rounded="xl"
 			className="font-geist"
+			w="full"
 		>
 			<Flex align="center" columnGap="2">
 				<BsBriefcase />

@@ -1,10 +1,16 @@
-import { Box, Flex, HStack, Stack, Text } from "@chakra-ui/react";
+import { Box, Flex, HStack, Stack, Text, WrapItem } from "@chakra-ui/react";
 import { IoFlaskOutline } from "react-icons/io5";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 const TechStack = () => {
 	return (
-		<Box border="2px" padding="5" rounded="xl" borderColor="gray.200">
+		<Box
+			border="2px"
+			padding="5"
+			rounded="xl"
+			borderColor="gray.200"
+			w="full"
+		>
 			<Flex justify="space-between" align="center">
 				<Flex align="center" columnGap="2">
 					<IoFlaskOutline />
@@ -32,27 +38,7 @@ const TechStack = () => {
 						"Javascript",
 						"Vitest",
 					].map((tech) => (
-						<Box
-							key={tech}
-							rounded="md"
-							borderWidth="2px"
-							borderColor="gray.200"
-							px="2"
-							py="1"
-							bg="gray.50"
-						>
-							{tech}
-						</Box>
-					))}
-				</HStack>
-			</Stack>
-			<Stack mt="4">
-				<Text fontSize="15px" fontWeight="600">
-					Backend
-				</Text>
-				<HStack fontSize="12px" spacing="2">
-					{["REST", "Laravel", ".NET", "PHP", "MySQL", "MSSQL", "JWT"].map(
-						(tech) => (
+						<WrapItem key={tech}>
 							<Box
 								key={tech}
 								rounded="md"
@@ -64,6 +50,30 @@ const TechStack = () => {
 							>
 								{tech}
 							</Box>
+						</WrapItem>
+					))}
+				</HStack>
+			</Stack>
+			<Stack mt="4">
+				<Text fontSize="15px" fontWeight="600">
+					Backend
+				</Text>
+				<HStack fontSize="12px" spacing="2">
+					{["REST", "Laravel", ".NET", "PHP", "MySQL", "MSSQL", "JWT"].map(
+						(tech) => (
+							<WrapItem key={tech}>
+								<Box
+									key={tech}
+									rounded="md"
+									borderWidth="2px"
+									borderColor="gray.200"
+									px="2"
+									py="1"
+									bg="gray.50"
+								>
+									{tech}
+								</Box>
+							</WrapItem>
 						)
 					)}
 				</HStack>
@@ -75,17 +85,19 @@ const TechStack = () => {
 				<HStack fontSize="12px" spacing="2">
 					{["Git", "Github", "Azure DevOps", "Teams", "VsCode"].map(
 						(tech) => (
-							<Box
-								key={tech}
-								rounded="md"
-								borderWidth="2px"
-								borderColor="gray.200"
-								px="2"
-								py="1"
-								bg="gray.50"
-							>
-								{tech}
-							</Box>
+							<WrapItem key={tech}>
+								<Box
+									key={tech}
+									rounded="md"
+									borderWidth="2px"
+									borderColor="gray.200"
+									px="2"
+									py="1"
+									bg="gray.50"
+								>
+									{tech}
+								</Box>
+							</WrapItem>
 						)
 					)}
 				</HStack>

@@ -7,13 +7,14 @@ import { MdVerified } from "react-icons/md";
 
 const Hero = () => {
 	return (
-		<HStack className="font-geist" w="full" columnGap="3">
+		<HStack className="font-geist" w="full" columnGap="3" bg="blue.400">
 			{/* Left */}
 			<Box flexShrink={0}>
 				<Image
 					src={myPicture}
 					boxSize={{
-						base: "205px",
+						base: "149px",
+						md: "205px",
 					}}
 					rounded="6px"
 					objectFit="cover"
@@ -21,16 +22,24 @@ const Hero = () => {
 			</Box>
 
 			{/* Right */}
-			<Box flex="1" px="2">
+			<Box flex="1" px="2" bg="orange.200" flexWrap="wrap">
 				{/* Name */}
-				<Text fontWeight="700" fontSize="26px">
+				<Text fontWeight="700" fontSize={{ md: "26px", base: "18px" }}>
 					Lester Maranan
 					<Icon as={MdVerified} boxSize="16px" color="blue.400" ml="1" />
 				</Text>
 				{/* Location */}
 				<HStack>
-					<Icon as={FiMapPin} boxSize="146x" mr="-1" />
-					<Text fontSize="16px" fontWeight="500">
+					<Icon
+						as={FiMapPin}
+						boxSize={{ md: "14px", base: "11px" }}
+						mr="-1"
+					/>
+					<Text
+						fontSize={{ md: "16px", base: "12px" }}
+						fontWeight="500"
+						isTruncated
+					>
 						Oriental Mindoro, Philippines
 					</Text>
 				</HStack>
@@ -45,7 +54,8 @@ const Hero = () => {
 				>
 					<Text
 						fontSize={{
-							base: "13px",
+							base: "11px",
+							md: "14px",
 						}}
 						fontWeight="400"
 					>
@@ -64,7 +74,15 @@ const Hero = () => {
 						align="center"
 					>
 						<Icon as={FaTrophy} boxSize="15px" color="white" />
-						<Text>Bachelor of Science In Information Technology</Text>
+						<Text
+							fontSize={{
+								base: "11px",
+								md: "14px",
+							}}
+							flexWrap="wrap"
+						>
+							Bachelor of Science In Information Technology
+						</Text>
 					</Flex>
 				</Stack>
 				{/* Links */}
