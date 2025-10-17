@@ -4,6 +4,7 @@ import { Box, Stack } from "@chakra-ui/react";
 import TechStack from "./components/TechStack";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import Wrapup from "./components/Wrapup";
 const App = () => {
 	return (
 		<Box
@@ -26,6 +27,9 @@ const App = () => {
 			</Stack>
 			<Box mt="2">
 				<Projects />
+			</Box>
+			<Box mt="2">
+				<Wrapup />
 			</Box>
 		</Box>
 	);
