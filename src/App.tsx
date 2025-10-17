@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import { Box, Stack } from "@chakra-ui/react";
 import TechStack from "./components/TechStack";
 import Experience from "./components/Experience";
+import Projects from "./components/Projects";
 const App = () => {
 	return (
 		<Box
@@ -23,6 +24,9 @@ const App = () => {
 					<Experience />
 				</Box>
 			</Stack>
+			<Box mt="2">
+				<Projects />
+			</Box>
 		</Box>
 	);
 };

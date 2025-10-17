@@ -8,8 +8,9 @@ const About = () => {
 			className="font-geist"
 			padding="5"
 			rounded="xl"
-			w="full"
 		>
+			{" "}
+			w="full"
 			<Flex align="center" columnGap="2">
 				<BsBriefcase />
 				<Text fontSize="20px" fontWeight="700">
