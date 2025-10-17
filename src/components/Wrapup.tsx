@@ -6,6 +6,7 @@ import { FaInstagram } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { CiCalendar } from "react-icons/ci";
 import { FaUsers } from "react-icons/fa6";
+import { FaChevronRight } from "react-icons/fa";
 
 const Wrapup = () => {
 	return (
@@ -88,7 +89,7 @@ const Wrapup = () => {
 					</Flex>
 				</Box>
 			</Box>
-			<Box>
+			<Box mt={{ base: "2px", md: "0px" }}>
 				<Box border="2px" padding="2" borderColor="gray.200" rounded="lg">
 					<Flex align="center" columnGap="3px">
 						<Icon as={MdOutlineEmail} fontSize="17px" color="gray.600" />
@@ -113,9 +114,12 @@ const Wrapup = () => {
 							Let's Talk
 						</Text>
 					</Flex>
-					<Text fontSize="10px" fontWeight="500" mt="1px">
-						scheduel a Call
-					</Text>
+					<Flex justify="space-between">
+						<Text fontSize="10px" fontWeight="500" mt="1px">
+							Schedule a Call
+						</Text>
+						<Icon as={FaChevronRight} fontSize="13px" color="gray.400" />
+					</Flex>
 				</Box>
 				<Box
 					border="2px"
@@ -130,9 +134,12 @@ const Wrapup = () => {
 							Community
 						</Text>
 					</Flex>
-					<Text fontSize="10px" fontWeight="500" mt="1px">
-						Join Discussion
-					</Text>
+					<Flex justify="space-between">
+						<Text fontSize="10px" fontWeight="500" mt="1px">
+							Join Discussion
+						</Text>
+						<Icon as={FaChevronRight} fontSize="13px" color="gray.400" />
+					</Flex>
 				</Box>
 			</Box>
 		</Grid>

@@ -10,7 +10,6 @@ const About = () => {
 			rounded="xl"
 		>
 			{" "}
-			w="full"
 			<Flex align="center" columnGap="2">
 				<BsBriefcase />
 				<Text fontSize="20px" fontWeight="700">
