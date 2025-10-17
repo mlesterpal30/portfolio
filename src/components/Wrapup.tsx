@@ -3,6 +3,9 @@ import { FiLink } from "react-icons/fi";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
+import { CiCalendar } from "react-icons/ci";
+import { FaUsers } from "react-icons/fa6";
 
 const Wrapup = () => {
 	return (
@@ -16,6 +19,7 @@ const Wrapup = () => {
 				md: "repeat(2, 1fr)", // 2 columns (tablet)
 				lg: "repeat(4, 1fr)", // 3 columns (laptop)
 			}}
+			columnGap={5}
 		>
 			<Box>
 				<Flex columnGap="2px" align="center">
@@ -82,6 +86,53 @@ const Wrapup = () => {
 							Linkedin
 						</Text>
 					</Flex>
+				</Box>
+			</Box>
+			<Box>
+				<Box border="2px" padding="2" borderColor="gray.200" rounded="lg">
+					<Flex align="center" columnGap="3px">
+						<Icon as={MdOutlineEmail} fontSize="17px" color="gray.600" />
+						<Text fontSize="10px" fontWeight="500">
+							Email
+						</Text>
+					</Flex>
+					<Text fontSize="10px" fontWeight="500" mt="1px">
+						mlestermarananpal@gmail.com
+					</Text>
+				</Box>
+				<Box
+					border="2px"
+					padding="2"
+					borderColor="gray.200"
+					rounded="lg"
+					mt="2px"
+				>
+					<Flex align="center" columnGap="3px">
+						<Icon as={CiCalendar} fontSize="17px" color="gray.600" />
+						<Text fontSize="10px" fontWeight="500">
+							Let's Talk
+						</Text>
+					</Flex>
+					<Text fontSize="10px" fontWeight="500" mt="1px">
+						scheduel a Call
+					</Text>
+				</Box>
+				<Box
+					border="2px"
+					padding="2"
+					borderColor="gray.200"
+					rounded="lg"
+					mt="2px"
+				>
+					<Flex align="center" columnGap="3px">
+						<Icon as={FaUsers} fontSize="17px" color="gray.600" />
+						<Text fontSize="10px" fontWeight="500">
+							Community
+						</Text>
+					</Flex>
+					<Text fontSize="10px" fontWeight="500" mt="1px">
+						Join Discussion
+					</Text>
 				</Box>
 			</Box>
 		</Grid>

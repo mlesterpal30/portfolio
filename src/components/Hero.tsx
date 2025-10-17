@@ -1,5 +1,5 @@
 import { HStack, Box, Text, Icon, Image, Flex, Stack } from "@chakra-ui/react";
-import myPicture from "../assets/bryllim.png";
+import myPicture from "../assets/me.jpg";
 import { FaTrophy } from "react-icons/fa";
 import { FiCalendar, FiMail, FiUser, FiMapPin } from "react-icons/fi";
 import { ChevronRightIcon } from "@chakra-ui/icons";
