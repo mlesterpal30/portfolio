@@ -25,7 +25,7 @@ const Experience = () => {
 
 	return (
 		<Box
-			border="2px"
+			border="1px"
 			borderColor="gray.200"
 			padding="5"
 			rounded="xl"
@@ -72,7 +72,7 @@ const Experience = () => {
 										{item.subtitle}
 									</Text>
 									<Box
-										border="2px"
+										border="1px"
 										borderColor="gray.200"
 										p="0.5"
 										rounded="md"

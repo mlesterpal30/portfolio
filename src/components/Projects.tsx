@@ -33,7 +33,7 @@ const Projects = () => {
 		<Box
 			className="font-geist"
 			padding="5"
-			border="2px"
+			border="1px"
 			borderColor="gray.200"
 			rounded="xl"
 		>
@@ -54,7 +54,7 @@ const Projects = () => {
 				{certifications.map((cert, index) => (
 					<Box
 						key={index}
-						border="2px"
+						border="1px"
 						borderColor="gray.200"
 						padding="3"
 						rounded="lg"

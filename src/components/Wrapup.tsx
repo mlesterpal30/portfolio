@@ -45,7 +45,7 @@ const Wrapup = () => {
 	const current = testimonials[index];
 	return (
 		<Grid
-			border="2px"
+			border="1px"
 			padding="5"
 			borderColor="gray.200"
 			rounded="xl"
@@ -66,7 +66,7 @@ const Wrapup = () => {
 				<Box mt="2">
 					<Flex
 						align="center"
-						border="2px"
+						border="1px"
 						borderColor="gray.200"
 						padding="1.5"
 						rounded="lg"
@@ -85,7 +85,7 @@ const Wrapup = () => {
 					</Flex>
 					<Flex
 						align="center"
-						border="2px"
+						border="1px"
 						borderColor="gray.200"
 						padding="1.5"
 						rounded="lg"
@@ -104,7 +104,7 @@ const Wrapup = () => {
 					</Flex>
 					<Flex
 						align="center"
-						border="2px"
+						border="1px"
 						borderColor="gray.200"
 						padding="1.5"
 						rounded="lg"
@@ -136,7 +136,7 @@ const Wrapup = () => {
 					</Text>
 				</Box>
 				<Box
-					border="2px"
+					border="1px"
 					padding="2"
 					borderColor="gray.200"
 					rounded="lg"
@@ -156,7 +156,7 @@ const Wrapup = () => {
 					</Flex>
 				</Box>
 				<Box
-					border="2px"
+					border="1px"
 					padding="2"
 					borderColor="gray.200"
 					rounded="lg"
@@ -177,7 +177,7 @@ const Wrapup = () => {
 				</Box>
 			</GridItem>
 			<GridItem
-				border="2px"
+				border="1px"
 				rounded="lg"
 				borderColor="gray.200"
 				padding="16px"

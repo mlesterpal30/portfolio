@@ -10,6 +10,7 @@ const App = () => {
 		<Box
 			mx={{ base: "12px", sm: "30px", md: "70px", lg: "150px", xl: "256px" }}
 			my={{ base: 8, md: 14 }}
+			overflow="hidden"
 		>
 			<Hero />
 			<Stack

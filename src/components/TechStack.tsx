@@ -5,7 +5,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 const TechStack = () => {
 	return (
 		<Box
-			border="2px"
+			border="1px"
 			padding="5"
 			rounded="xl"
 			borderColor="gray.200"

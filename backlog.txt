@@ -1,0 +1,6 @@
+1. change the border fo the box - done
+2. fix the hero section so that it will not take another extra width
+3. add view all in the recent projects
+4. add a animte on how each box is render
+5.make the view all functional
+6. redirect the users to the proper destination of each links  
