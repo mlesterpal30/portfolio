@@ -124,7 +124,7 @@ const Wrapup = () => {
 				</Box>
 			</GridItem>
 			<GridItem mt={{ base: "20px", md: "0px" }} colSpan={1}>
-				<Box border="2px" padding="2" borderColor="gray.200" rounded="lg">
+				<Box border="1px" padding="2" borderColor="gray.200" rounded="lg">
 					<Flex align="center" columnGap="3px">
 						<Icon as={MdOutlineEmail} fontSize="17px" color="gray.600" />
 						<Text fontSize="10px" fontWeight="500">

@@ -102,6 +102,7 @@ const Hero = () => {
 				{/* Links */}
 				<Stack
 					direction={{ base: "column", md: "row" }} // VStack on base, HStack on md+
+					rowGap="4px"
 				>
 					{/* EMAIL */}
 					<Flex
